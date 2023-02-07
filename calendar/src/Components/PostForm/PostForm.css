@@ -1,0 +1,94 @@
+.post-form{
+    width: 300px;
+    
+    background: white;
+    border: 1px solid rgba(37, 37, 37, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.post-form input{
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 8px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(37, 37, 37, 0.5);
+}
+
+.post-form p{
+    margin: 0;
+}
+
+.btnsForm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btnsForm button{
+    margin-left: 10px;
+    background: rgb(139, 64, 189);
+    outline: none;
+    border: 1px solid rgba(37, 37, 37, 0.5);
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.timePicker{
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.dayForEvent{
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.dayForEvent:hover{
+    /* border-bottom: 1px solid rgba(37, 37, 37, 0.5); */
+    text-decoration: underline;
+}
+
+.timeForEvent{
+    background: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.timeForEvent:hover{
+    /* border-bottom: 1px solid rgba(37, 37, 37, 0.5); */
+    text-decoration: underline;
+}
+
+.timeList{
+    position: absolute;
+    right: -55px;
+    top: -15px;
+    border-radius: 2px;
+    background: white;
+    height: 60px;
+    overflow: scroll;
+    padding: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.imeListItem{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.imeListItem:hover{
+    text-decoration: underline;
+}

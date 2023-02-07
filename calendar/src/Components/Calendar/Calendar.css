@@ -1,0 +1,127 @@
+.Calendar{
+    width: 80%;
+    height: 100%;
+}
+
+table{
+    /* width: 100%;
+    height: 100vh; */
+    border-collapse: collapse;
+    border: 1px solid rgba(141, 141, 141, .3);
+    border-top: none;
+    width: 100%;
+    height: 100%;
+}
+
+.day{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+    
+}
+.day span{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+.day-month{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+    
+}
+
+.day .dayNum{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.day .dayNum:hover{
+    background: rgb(240, 240, 240);
+}
+
+td{
+    padding: 1px;
+    width: 14.2857143%;
+    /* width: 100px; */
+    height: 100px;
+}
+
+.weeks{
+    height: 10px;
+    border-top: none;
+    border-bottom: none;
+      
+}
+table tbody:nth-child(1) tr td{
+    border-top: none;
+}
+
+.weeks td{
+    padding: 5px 0 0 0;  
+    border-bottom: none;
+    border-top: none;
+    text-align: center;
+    color: rgb(124, 124, 124);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    height: 10px;
+    
+}
+
+
+/* curent day */
+.currentDay{
+    background: rgb(51, 143, 230);
+    color: white !important;
+}
+
+.currentDay:hover{
+    background: rgb(39, 116, 187) !important;
+}
+
+/* ************************************ */
+
+
+.otherMonth{
+    color: rgb(131, 131, 131);
+}
+
+
+.evt{
+    width: 100%;
+    /* background: rgb(139, 64, 189); */
+    background: #7986cb;
+    border-radius: 3px;
+    color: white;
+    padding: 0 2px 0 2px;
+    cursor: pointer;
+    margin: .5px 0;
+}
+
+.more-evt{
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
